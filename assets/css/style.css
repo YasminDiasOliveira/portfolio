@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+
+/* pseudo-elemento */
+header::before {
+    content: '';
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+h1 {
+    color: #FFF;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    font-size: 3rem;
+    font-family: 'Josefin Sans';
+}
+
+span {
+    color: #FFF;
+    font-family: 'Josefin Sans';
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    font-size: 2em;
+}
+
+.botao {
+    background-color: #CE481F;
+    color: #FFF;
+    font-family: 'Josefin Sans';
+    padding: .6rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
